@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio de JS</title>
+</head>
+<body>
+  <h1>Qual o seu país? 😊</h1>
+  Digite o seu país de origem: <input type="text" name="país" id="país">
+  <input type="button" value="Enviar" onclick="Computar()">
+  <div id="res">
+
+  </div>
+  <script>
+    function Computar() {
+        var origem = window.document.getElementById('país')
+        var res = window.document.getElementById('res')
+        origem.innerHTML(`Nasci em ${país}`)
+        if (origem == 'Brasil') {
+           origem.innerHTML += ('Você é Brasileiro.')
+      } else {
+        origem.innerHTML += ('Você é estrangeiro.')
+      }
+    }
+
+  </script>
+</body>
+</html>
